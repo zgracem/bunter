@@ -21,6 +21,8 @@ Gem::Specification.new do |spec|
   spec.executables   = ["bunter"]
   spec.require_paths = ["lib"]
 
+  spec.add_development_dependency "yard" # <github.com/lsegal/yard/>
+
   spec.add_runtime_dependency "activesupport"
   spec.add_runtime_dependency "plist" # <github.com/patsplat/plist>
   spec.add_runtime_dependency "rubyzip" # <github.com/rubyzip/rubyzip>

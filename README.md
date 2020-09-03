@@ -82,6 +82,16 @@ A sample file is also provided in [`data/`][data].
 
 ## Development
 
-After checking out the repo, run `bin/setup` to install dependencies. You can
-also run `bin/console` for an interactive prompt that will allow you to
-experiment.
+After checking out this repo, run `bin/setup` to install dependencies.
+
+Run `bin/console` for an interactive prompt that will allow you to experiment.
+
+### Documentation
+
+Bunter is documented using [YARD].
+
+* `rake docs:build` will write full documentation for Bunter to `doc/yard`.
+* `rake docs:cleanup` will remove `doc/yard` entirely.
+* `rake docs:server` will start a documentation server at `localhost:8808`.
+
+[Yard]: https://github.com/lsegal/yard
