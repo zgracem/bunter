@@ -61,7 +61,10 @@ module Bunter
 
     # @return [String]
     def inspect
-      %(#<#{self.class.name}:0x#{uuid.scan(/\h+/).first.downcase}…: "#{name}" (‘#{keyword}’ → “#{snippet}”)>)
+      tag   = "#{self.class.name}:#{uuid.scan(/\h+/).first.downcase}-…"
+      label = %("#{name}" (‘#{keyword}’ → “#{snippet}”))
+
+      "#<#{tag}: #{label}>"
     end
 
     # @return [Hash{String=>Object}]
