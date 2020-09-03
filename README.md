@@ -58,23 +58,30 @@ Alfred will take care of the rest!
 
 ```yaml
 ---
-name:         "Emoji"
-image:        "images/emoji.png"
-prefix:       ":"
-suffix:       ":"
+name:           "Emoji"
+image:          "images/emoji.png"
+prefix:         ":;"
+suffix:         ":"
 snippets:
-- keyword:    "100"
-  snippet:    "💯"
-  name:       "100% emoji"
-  uuid:       "50677B02-641D-4372-B9B3-32F46A9BEE3D"
-  auto_expand: true
+- keyword:      "100"
+  snippet:      "💯"
+  name:         "100% emoji"
+  uuid:         "C7462899-A668-4815-AB29-0A9A0521E13A"
+  auto_expand:  true
+- keyword:      "alien"
+  snippet:      "👽"
+  name:         "Alien emoji"
+  uuid:         "4E95D4E7-508C-4FF0-9C20-87652C4A0888"
+  auto_expand:  true
 ...
 ```
 
 * `image` is an optional path to a PNG image, relative to the YAML file.
 * `prefix` and `suffix` are also optional.
-* For each item in `snippets`, a `uuid` is optional—Bunter automatically adds
-  UIDs to snippets without them as part of the conversion process.
+* For each item under `snippets`:
+    * `uuid` is optional: Bunter will automatically add UUIDs to snippets which
+      lack them.
+    * `auto_expand` is optional, and defaults to `false`.
 
 A sample file is also provided in [`data/`][data].
 
