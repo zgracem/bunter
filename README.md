@@ -95,3 +95,12 @@ Bunter is documented using [YARD].
 * `rake docs:server` will start a documentation server at `localhost:8808`.
 
 [Yard]: https://github.com/lsegal/yard
+
+### Contributing
+
+Bug reports and pull requests are welcome on Bunter's [GitHub] repo.
+
+Everyone interacting with this project must follow the [code of conduct][cc].
+
+[GitHub]: https://github.com/zgracem/bunter
+[cc]: https://github.com/zgracem/bunter/blob/main/CODE_OF_CONDUCT.md
