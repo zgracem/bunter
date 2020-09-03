@@ -76,6 +76,10 @@ snippets:
 * For each item in `snippets`, a `uid` is optional—Bunter automatically adds
   UIDs to snippets without them as part of the conversion process.
 
+A sample file is also provided in [`data/`][data].
+
+[data]: https://github.com/zgracem/bunter/tree/main/data
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. You can

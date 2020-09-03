@@ -1,0 +1,41 @@
+---
+name:   Zodiac
+prefix: ";"
+image:  images/zodiac.png
+snippets:
+  - name:    Aries
+    keyword: aries
+    snippet: "♈︎"
+  - name:    Taurus
+    keyword: taurus
+    snippet: "♉︎"
+  - name:    Gemini
+    keyword: gemini
+    snippet: "♊︎"
+  - name:    Cancer
+    keyword: cancer
+    snippet: "♋︎"
+  - name:    Leo
+    keyword: leo
+    snippet: "♌︎"
+  - name:    Virgo
+    keyword: virgo
+    snippet: "♍︎"
+  - name:    Libra
+    keyword: libra
+    snippet: "♎︎"
+  - name:    Scorpio
+    keyword: scorpio
+    snippet: "♏︎"
+  - name:    Sagittarius
+    keyword: sagittarius
+    snippet: "♐︎"
+  - name:    Capricorn
+    keyword: capricorn
+    snippet: "♑︎"
+  - name:    Aquarius
+    keyword: aquarius
+    snippet: "♒︎"
+  - name:    Pisces
+    keyword: pisces
+    snippet: "♓︎"
