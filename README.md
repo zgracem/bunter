@@ -31,7 +31,7 @@ Alfred Preferences GUI:
 
 ![Right-click on it in the 'Collections' pane and select 'Export…'][img]
 
-[img]: ./doc/alfred-export-example.png?raw=true
+[img]: https://raw.githubusercontent.com/zgracem/bunter/main/doc/alfred-export-example.png?raw=true
 
 Then use Bunter to decompile the exported snippets into YAML (on stdout):
 
