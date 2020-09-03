@@ -21,10 +21,10 @@ Gem::Specification.new do |spec|
   spec.executables   = ["bunter"]
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "yard" # <github.com/lsegal/yard/>
+  spec.add_development_dependency "yard", "~> 0.9", ">= 0.9.20" # <github.com/lsegal/yard>
 
-  spec.add_runtime_dependency "activesupport"
-  spec.add_runtime_dependency "plist" # <github.com/patsplat/plist>
-  spec.add_runtime_dependency "rubyzip" # <github.com/rubyzip/rubyzip>
-  spec.add_runtime_dependency "symbolized" # <github.com/TamerShlash/symbolized>
+  spec.add_runtime_dependency "activesupport", "~> 6.0"
+  spec.add_runtime_dependency "plist", "~> 3.5" # <github.com/patsplat/plist>
+  spec.add_runtime_dependency "rubyzip", "~> 2.3" # <github.com/rubyzip/rubyzip>
+  spec.add_runtime_dependency "symbolized", "~> 0.0.1" # <github.com/TamerShlash/symbolized>
 end
