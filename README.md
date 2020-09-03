@@ -19,7 +19,7 @@ and then:
 
 ```sh
 cd ~/Downloads # or wherever you saved the file
-gem install bunter-0.0.1.gem
+gem install bunter-0.1.0.gem
 ```
 
 ## Usage
