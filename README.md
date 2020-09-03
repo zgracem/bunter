@@ -66,14 +66,14 @@ snippets:
 - keyword:    "100"
   snippet:    "💯"
   name:       "100% emoji"
-  uid:        "50677B02-641D-4372-B9B3-32F46A9BEE3D"
+  uuid:       "50677B02-641D-4372-B9B3-32F46A9BEE3D"
   auto_expand: true
 ...
 ```
 
 * `image` is an optional path to a PNG image, relative to the YAML file.
 * `prefix` and `suffix` are also optional.
-* For each item in `snippets`, a `uid` is optional—Bunter automatically adds
+* For each item in `snippets`, a `uuid` is optional—Bunter automatically adds
   UIDs to snippets without them as part of the conversion process.
 
 A sample file is also provided in [`data/`][data].

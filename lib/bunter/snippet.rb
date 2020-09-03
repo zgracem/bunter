@@ -15,8 +15,8 @@ module Bunter
     attr_accessor :name
 
     # @return [String] the snippet's unique identifier
-    attr_reader :uid
-    alias_method :uuid, :uid
+    attr_reader :uuid
+    alias_method :uid, :uuid
 
     # @return [Boolean] whether the snippet should automatically expand
     attr_reader :auto_expand
@@ -29,7 +29,7 @@ module Bunter
     # @option snippet_data :keyword [String]
     # @option snippet_data :name [String]
     # @option snippet_data :auto_expand [Boolean, nil] defaults to `true`
-    # @option snippet_data :uid [String, nil] auto-generates if not provided
+    # @option snippet_data :uuid [String, nil] auto-generates if not provided
     def initialize(snippet_data)
       info = snippet_data.to_symbolized_hash
 
@@ -43,7 +43,7 @@ module Bunter
         else
           true
         end
-      @uid = info[:uid] || info[:uuid] || SecureRandom.uuid.upcase
+      @uuid = info[:uuid] || info[:uid] || SecureRandom.uuid.upcase
       @name = info[:name] || @snippet
     end
 
@@ -61,7 +61,7 @@ module Bunter
 
     # @return [String]
     def inspect
-      %(#<#{self.class.name}:0x#{uid.scan(/\h+/).first.downcase}…: "#{name}" (‘#{keyword}’ → “#{snippet}”)>)
+      %(#<#{self.class.name}:0x#{uuid.scan(/\h+/).first.downcase}…: "#{name}" (‘#{keyword}’ → “#{snippet}”)>)
     end
 
     # @return [Hash{String=>Object}]
@@ -71,7 +71,7 @@ module Bunter
         "name"        => name,
         "keyword"     => keyword,
         "auto_expand" => auto_expand,
-        "uid"         => uid
+        "uuid"        => uuid
       }
       hsh_["dontautoexpand"] = true unless auto_expand?
       hsh_
@@ -101,7 +101,7 @@ module Bunter
 
     # @return [String] the name of the snippet's JSON file
     def filename
-      "#{name.delete(File::SEPARATOR)} [#{uid}].json"
+      "#{name.delete(File::SEPARATOR)} [#{uuid}].json"
     end
   end
 end
