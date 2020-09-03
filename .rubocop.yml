@@ -1,0 +1,52 @@
+AllCops:
+  TargetRubyVersion: 2.5
+
+Layout/HashAlignment:
+  EnforcedHashRocketStyle: table
+  EnforcedColonStyle: table
+
+Layout/ClassStructure:
+  Enabled: true
+
+Layout/FirstArrayElementLineBreak:
+  Enabled: true
+Layout/FirstHashElementLineBreak:
+  Enabled: true
+
+Layout/MultilineArrayLineBreaks:
+  Enabled: true
+Layout/MultilineHashKeyLineBreaks:
+  Enabled: true
+
+Metrics/AbcSize:
+  Enabled: false
+Metrics/CyclomaticComplexity:
+  Enabled: false
+Metrics/LineLength:
+  Max: 118
+Metrics/MethodLength:
+  Enabled: false
+Metrics/PerceivedComplexity:
+  Enabled: false
+
+Style/AutoResourceCleanup:
+  Enabled: true
+Style/AsciiComments:
+  Enabled: false
+Style/CollectionMethods:
+  Enabled: true
+Style/DateTime:
+  Enabled: true
+Style/DoubleNegation:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Style/HashSyntax:
+  EnforcedStyle: ruby19_no_mixed_keys
+Style/PercentLiteralDelimiters:
+  PreferredDelimiters:
+    default: "()"
+Style/RescueStandardError:
+  EnforcedStyle: implicit
+Style/StringLiterals:
+  EnforcedStyle: double_quotes

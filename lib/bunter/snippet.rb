@@ -5,18 +5,18 @@ module Bunter
   class Snippet
     # @return [String] the phrase to which the snippet expands
     attr_accessor :snippet
-    alias_method :phrase, :snippet
+    alias phrase snippet
 
     # @return [String] the shortcut from which the snippet expands
     attr_accessor :keyword
-    alias_method :shortcut, :keyword
+    alias shortcut keyword
 
     # @return [String] the name of the snippet
     attr_accessor :name
 
     # @return [String] the snippet's unique identifier
     attr_reader :uuid
-    alias_method :uid, :uuid
+    alias uid uuid
 
     # @return [Boolean] whether the snippet should automatically expand
     attr_reader :auto_expand
@@ -48,10 +48,9 @@ module Bunter
     end
 
     # @param new_val [Boolean] set whether the snippet should automatically expand
-    # @return [self]
+    # @return [Boolean]
     def auto_expand=(new_val)
       @auto_expand = !!new_val
-      self
     end
 
     # @return [String]
@@ -86,7 +85,7 @@ module Bunter
     end
 
     # @return [String] the snippet as JSON
-    def to_json
+    def to_json(*_args)
       { alfredsnippet: to_h }.to_json
     end
 
