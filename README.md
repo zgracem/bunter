@@ -1,11 +1,21 @@
 # Bunter: A butler for Alfred 🕴
 
+Bunter lets you manage your [Alfred] [snippets] as simple YAML files.
+
+[Alfred]: https://alfredapp.com
+[snippets]: https://alfredapp.com/help/features/snippets
+
 ## Installation
 
-Add this line to your application's Gemfile:
+### Bundler
+
+Add Bunter to your application's `Gemfile`:
 
 ```ruby
+# Directly from GitHub!
 gem "bunter", github: "zgracem/bunter"
+# Or you can clone this repo to (e.g.) $your_app/lib/bunter:
+gem "bunter", path: "./lib/bunter"
 ```
 
 And then execute:
@@ -14,8 +24,9 @@ And then execute:
 bundle install
 ```
 
-Or download [the latest release](https://github.com/zgracem/bunter/releases),
-and then:
+### Manual/RubyGems
+
+Download [the latest release](https://github.com/zgracem/bunter/releases), then:
 
 ```sh
 cd ~/Downloads # or wherever you saved the file
@@ -36,7 +47,7 @@ Alfred Preferences GUI:
 Then use Bunter to decompile the exported snippets into YAML (on stdout):
 
 ```sh
-bunter ./Emoji.alfredsnippets > ./src/emoji.yaml
+bunter Emoji.alfredsnippets > src/emoji.yaml
 ```
 
 ### YAML → Alfred
@@ -46,12 +57,11 @@ First, prepare a YAML file according to the syntax reference below.
 Then use Bunter to compile the YAML into an `.alfredsnippets` file:
 
 ```sh
-$ bunter ./src/snippets.yaml
+$ bunter src/snippets.yaml
 /Users/zgm/Desktop/My_Collection.alfredsnippets
 ```
 
-Find the file on your desktop and double-click it.
-
+The file will be automatically saved to your desktop—just double-click it, and
 Alfred will take care of the rest!
 
 ## YAML syntax example
