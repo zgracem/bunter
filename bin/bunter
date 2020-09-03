@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+
+require_relative "../lib/bunter"
+
+# action: convert
+ARGV.each do |arg|
+  ext = arg.split(".", 2).last.downcase
+  case ext.downcase.to_sym
+  when :yaml
+    puts Bunter::Collection.from_yaml_file(arg).to_snippets_file
+  when :alfredsnippets
+    puts Bunter::Collection.from_snippets_file(arg).to_yaml
+  else
+    raise ArgumentError, "don't know how to process a .#{ext} file"
+  end
+end
