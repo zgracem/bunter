@@ -1,4 +1,4 @@
-# Bunter: A butler for Alfred 🕴
+# Bunter: a butler for Alfred 🕴
 
 Bunter lets you manage your [Alfred] [snippets] as simple YAML files.
 
@@ -14,6 +14,7 @@ Add Bunter to your application's `Gemfile`:
 ```ruby
 # Directly from GitHub!
 gem "bunter", github: "zgracem/bunter"
+
 # Or you can clone this repo to (e.g.) $your_app/lib/bunter:
 gem "bunter", path: "./lib/bunter"
 ```
@@ -68,20 +69,20 @@ Alfred will take care of the rest!
 
 ```yaml
 ---
-name:           "Emoji"
-image:          "images/emoji.png"
-prefix:         ":;"
+name:           Emoji
+image:          images/emoji.png
+prefix:         ":"
 suffix:         ":"
 snippets:
-- keyword:      "100"
-  snippet:      "💯"
-  name:         "100% emoji"
-  uuid:         "C7462899-A668-4815-AB29-0A9A0521E13A"
+- keyword:      100
+  snippet:      💯
+  name:         100% emoji
+  uuid:         C7462899-A668-4815-AB29-0A9A0521E13A
   auto_expand:  true
-- keyword:      "alien"
-  snippet:      "👽"
-  name:         "Alien emoji"
-  uuid:         "4E95D4E7-508C-4FF0-9C20-87652C4A0888"
+- keyword:      alien
+  snippet:      👽
+  name:         Alien emoji
+  uuid:         4E95D4E7-508C-4FF0-9C20-87652C4A0888
   auto_expand:  true
 ...
 ```
